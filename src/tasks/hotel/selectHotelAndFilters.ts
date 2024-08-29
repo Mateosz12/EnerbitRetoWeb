@@ -114,7 +114,7 @@ export class selectReservationTask {
         await this.clickButton(btn_book);
 
         await expect(this.page.locator(reservationPage.h3Reservation)).toBeVisible();
-        await this.page.pause();
+        //await this.page.pause();
     }
 
     private async clickButton(btn_book: string) {
