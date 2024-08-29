@@ -1,3 +1,6 @@
+# Para clonar 
+-git clone https://github.com/Mateosz12/T-evolversReto.git
+
 # Automatización de Pruebas para Reserva de Hotel DXHotels
 
 Este repositorio contiene la automatización de pruebas para una aplicación web de reservas de hotel. A continuación, se detallan los escenarios automatizados y cómo se abordaron los defectos encontrados.
@@ -57,6 +60,7 @@ Como (QA), abordaría estos errores de la siguiente manera:
      .\env.ps1 
 
      ```
+     NOTA: adicional se deben instalar los paquetes de Faker js npm install @faker-js/faker --save-dev  y  Date fns npm install date-fns --save
  2. Para ejecutar las pruebas, utiliza el siguiente comando:
      ```javascript
       npx playwright test o 
