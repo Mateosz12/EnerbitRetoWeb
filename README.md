@@ -8,8 +8,8 @@ Este repositorio contiene la automatización de pruebas para una aplicación web
 ## Escenarios Automatizados
 
 ### 1. Login Exitoso y Fallido
-Se evidenia en en la pagia DXHotels presenta inconvenientes para su automatización como el capchat, no presenta un registro de usuario para posteriormente hacer login
-y en cuanto al mal funcionamiento que presenta en general el inicio de sesion se procede a automatizar la reserva con los diferentes filtros.
+Se evidencia que la pagina DXHotels presenta inconvenientes para su automatización como el capchat, no presenta un registro de usuario para posteriormente hacer login
+y en cuanto al mal funcionamiento que presenta el inicio de sesion en general  se procede a automatizar la reserva con los diferentes filtros.
 
 Para que esto no sea un impedimento, en el mismo proyecto hay uno paralelo que es la automatización de la pagina web 'https://www.saucedemo.com/v1/'.
 Allí se validaron varios escenarios, tanto de inicio de sesion exitoso y no exitoso, ademas de una prueba E2E hasta el pago y comparación de precios de los elementos seleccionados.
@@ -63,7 +63,7 @@ Como (QA), abordaría estos errores de la siguiente manera:
      NOTA: adicional se deben instalar los paquetes de Faker js npm install @faker-js/faker --save-dev  y  Date fns npm install date-fns --save
  2. Para ejecutar las pruebas, utiliza el siguiente comando:
      ```javascript
-      npx playwright test o 
+      npx playwright test 
 
     ```
 2. Ejecucion modo visual:
