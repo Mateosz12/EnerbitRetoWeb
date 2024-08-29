@@ -22,7 +22,7 @@ export default defineConfig({
    
     trace: 'on',
     navigationTimeout: 30000,
-    headless: true,
+    headless: false,
     ignoreHTTPSErrors: false,
 
   },

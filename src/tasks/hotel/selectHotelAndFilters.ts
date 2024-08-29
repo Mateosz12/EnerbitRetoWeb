@@ -27,13 +27,14 @@ export class selectReservationTask {
 
         while (initialPrice < filters.minPrice || initialPrice > filters.maxPrice) {
 
-            if (initialPrice > 250) {
-
-                this.page.mouse.wheel(0, -200);//up
-            }
             if (initialPrice < 200) {
                 this.page.mouse.wheel(0, 100);//down
+            }else {
+
+                console.log("fuera de rango");
+                
             }
+            
             initialPrice = parseInt((await this.page.locator(selectHotelPage.init_price).innerText()).split('$')[1]);
 
 
@@ -57,12 +58,13 @@ export class selectReservationTask {
 
         while (initialRating !== targetRating) {
 
-            if (initialRating > targetRating) {
-
-                this.page.mouse.wheel(0, -2);
-            }
+            
             if (initialRating < targetRating) {
                 this.page.mouse.wheel(0, 2);
+            }else {
+
+                console.log("fuera de rango");
+                
             }
             await this.page.waitForTimeout(500);
             initialRating = parseInt((await this.page.locator(selectHotelPage.initRating).innerText()).trim());
