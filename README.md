@@ -63,7 +63,7 @@ Como (QA), abordaría estos errores de la siguiente manera:
      .\env.ps1 
 
      ```
-     NOTA: adicional se deben instalar los paquetes de Faker js npm install @faker-js/faker --save-dev  y  Date fns npm install date-fns --save
+     NOTA: adicional si te falla es posible que se deban instalar los paquetes de Faker js npm install @faker-js/faker --save-dev  y  Date fns npm install date-fns --save
  2. Para ejecutar las pruebas, utiliza el siguiente comando:
      ```javascript
       npx playwright test 
