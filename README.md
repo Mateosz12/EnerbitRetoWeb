@@ -1,6 +1,9 @@
 # Para clonar 
 -git clone https://github.com/Mateosz12/T-evolversReto.git
 
+# URL 
+https://demos.devexpress.com/rwa/dxhotels/Default.aspx
+
 # Automatización de Pruebas para Reserva de Hotel DXHotels
 
 Este repositorio contiene la automatización de pruebas para una aplicación web de reservas de hotel. A continuación, se detallan los escenarios automatizados y cómo se abordaron los defectos encontrados.
