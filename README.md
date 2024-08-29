@@ -47,6 +47,7 @@ USER jenkins
    - instalar pluggis HTML Publisher, Docker, docker pipeline
    - Crea un pipeline nuevo y vincúlalo a este repositorio. 
    - Ejecuta el pipeline para ver los resultados de las pruebas.
+   - Adicional para ver el reporte debemos poner esta linea: System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "") en "admistrar jenkins" -> "consola de script" y ejecuar 
 
 
 # Estructura
