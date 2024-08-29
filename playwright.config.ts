@@ -33,12 +33,9 @@ export default defineConfig({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        contextOptions: {
-          // chromium-specific permissions
-          permissions: ["clipboard-read", "clipboard-write"],
-          storageState: "playwright/.auth/user.json"
+    
         },
-      },
+    
     },
 
  
