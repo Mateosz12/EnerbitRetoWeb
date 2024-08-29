@@ -4,6 +4,21 @@
 # URL 
 https://demos.devexpress.com/rwa/dxhotels/Default.aspx
 
+# Estructura
+
+La estructura definida es basada en Screenplay
+dentro de cada carpeta tenemos definido otras 2 mas 1 para las pruebas del Hotel y otra para las pruebas de saucedemo
+
+- src
+   -model
+   -resourses
+   -tasks
+   -utils
+- test
+   -hotel
+   -saucedemo
+  
+
 # Automatización de Pruebas para Reserva de Hotel DXHotels
 
 Este repositorio contiene la automatización de pruebas para una aplicación web de reservas de hotel. A continuación, se detallan los escenarios automatizados y cómo se abordaron los defectos encontrados.
