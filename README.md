@@ -4,6 +4,51 @@
 # URL 
 https://demos.devexpress.com/rwa/dxhotels/Default.aspx
 
+# Proyecto de Pruebas Automatizadas
+
+## Docker
+1. **Crear DockerFile**:
+```bash
+  FROM jenkins/jenkins:lts-jdk17
+
+USER root
+RUN curl -ssl https://get.docker.com/ | sh
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
+RUN npx playwright install --with-deps
+# Instalar PowerShell
+RUN apt-get update && \
+    apt-get install -y wget apt-transport-https software-properties-common && \
+    wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
+    dpkg -i packages-microsoft-prod.deb && \
+    apt-get update && \
+    apt-get install -y powershell
+
+# Establecer el directorio de trabajo
+WORKDIR /app
+
+# Copiar archivos necesarios
+COPY . .
+USER jenkins
+   ```
+2. **Construir la imagen**:
+   ```bash
+   docker build --tag docker-in-docker-jenkins .
+
+   ```
+3. **Ejecutar el contenedor**:
+   ```bash
+   docker run --rm --group-add 0 -v "//var/run/docker.sock:/var/run/docker.sock" -p 8080:8080 -v jenkins_home:/var/jenkins_home --name jenkins docker-in-docker-jenkins
+   ```
+
+## Jenkins
+1. **Configurar Jenkins**:
+   - Asegúrate de tener Jenkins configurado para ejecutar pipelines.
+   - Crea un pipeline nuevo y vincúlalo a este repositorio.
+   - En el job pon la configuracion del Jenkinsfile 
+   - Ejecuta el pipeline para ver los resultados de las pruebas.
+
+
 # Estructura
 
 La estructura definida es basada en Screenplay
