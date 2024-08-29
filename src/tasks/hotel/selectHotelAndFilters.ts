@@ -112,7 +112,7 @@ export class selectReservationTask {
         }
 
         await this.clickButton(btn_book);
-
+        await this.page.waitForTimeout(500);
         await expect(this.page.locator(reservationPage.h3Reservation)).toBeVisible();
         //await this.page.pause();
     }
