@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 
 export default defineConfig({
@@ -30,12 +30,17 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: "setup",
+      testMatch: /.*\.setup\.ts/,
+    },
+    {
       name: 'chromium',
       use: { 
-        viewport: null,
-        channel: "chrome",
-        launchOptions: {
-          args: ["--start-maximized"]
+        ...devices["Desktop Chrome"],
+        contextOptions: {
+          // chromium-specific permissions
+          permissions: ["clipboard-read", "clipboard-write"],
+          storageState: "playwright/.auth/user.json"
         }
        },
     },
