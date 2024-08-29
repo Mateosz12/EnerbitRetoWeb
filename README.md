@@ -45,8 +45,7 @@ USER jenkins
 1. **Configurar Jenkins**:
    - Asegúrate de tener Jenkins configurado para ejecutar pipelines.
    - instalar pluggis HTML Publisher, Docker, docker pipeline
-   - Crea un pipeline nuevo y vincúlalo a este repositorio.
-   - En el job pon la configuracion del Jenkinsfile 
+   - Crea un pipeline nuevo y vincúlalo a este repositorio. 
    - Ejecuta el pipeline para ver los resultados de las pruebas.
 
 
