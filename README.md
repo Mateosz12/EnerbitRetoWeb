@@ -10,13 +10,13 @@ La estructura definida es basada en Screenplay
 dentro de cada carpeta tenemos definido otras 2 mas 1 para las pruebas del Hotel y otra para las pruebas de saucedemo
 
 - src
-   -model
-   -resourses
-   -tasks
-   -utils
+   - model
+   - resourses
+   - tasks
+   - utils
 - test
-   -hotel
-   -saucedemo
+   - hotel
+   - saucedemo
   
 
 # Automatización de Pruebas para Reserva de Hotel DXHotels
