@@ -1,6 +1,11 @@
 pipeline {
    agent { docker { image 'mcr.microsoft.com/playwright:v1.42.1-jammy' } }
    stages {
+      stage('Install Browsers') {
+         steps {
+            sh 'npx playwright install'
+         }
+      }
       stage('e2e-tests') {
          steps {
             sh 'npm ci'
@@ -9,17 +14,16 @@ pipeline {
       }
    }
    
-   post{
-       always{
+   post {
+       always {
             publishHTML([
-                            reportName : 'Playwright Report',
-                            reportDir: 'playwright-report',
-                            reportFiles: 'index.html',
-                            keepAll:     true,
-                            alwaysLinkToLastBuild: true,
-                            allowMissing: false
-                        ])
+                reportName : 'Playwright Report',
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                keepAll:     true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ])
        }
    }
-   
 }
