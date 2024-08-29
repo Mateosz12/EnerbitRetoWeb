@@ -14,15 +14,15 @@ Allí se validaron varios escenarios, tanto de inicio de sesion exitoso y no exi
 ### 2. Reservación de Hotel
 Descripción: Se automatiza la reserva de un hotel con filtros específicos.
 Pasos:
-o Fecha de check-in: 2 días a partir de la fecha actual.
-o Fecha de check-out: 7 días a partir de la fecha actual.
-o Número de habitaciones: 2.
-o Número de adultos: 3.
-o Número de niños: 2.
-o Rango de precio: superior a $200 USD.
-o Número de estrellas: 3 o más.
-o Aplicar los filtros seleccionados.
-o Seleccionar el hotel más económico que cumpla con los filtros
+- Fecha de check-in: 2 días a partir de la fecha actual.
+- Fecha de check-out: 7 días a partir de la fecha actual.
+- Número de habitaciones: 2.
+- Número de adultos: 3.
+- Número de niños: 2.
+- Rango de precio: superior a $200 USD.
+- Número de estrellas: 3 o más.
+- Aplicar los filtros seleccionados.
+- Seleccionar el hotel más económico que cumpla con los filtros
 establecidos.
 
 ## Defectos Encontrados
@@ -31,8 +31,8 @@ Defecto: La funcionalidad de inicio de sesión no funciona correctamente.
 Al intentar loguearme en la web, observamos que dicha funcionalidad no permite hacer el loguin de manera exitosa, aun ingresando credenciales validas.
 
 ### Funcionalidad Reserva de Hotel
-Defecto 1. : No permite hacer la reserva ya que pide pide loguarse, pero esa funcionalidad presenta no funciona correctamente.
-Defecto 2. : No existe un boton "Reservar", y por este defecto y los anteriores mencionados, no se visualizara un mensaje de reserva exitosa.
+- Defecto 1. : No permite hacer la reserva ya que pide pide loguarse, pero esa funcionalidad presenta no funciona correctamente.
+- Defecto 2. : No existe un boton "Reservar", y por este defecto y los anteriores mencionados, no se visualizara un mensaje de reserva exitosa.
 
 Como (QA), abordaría estos errores de la siguiente manera:
 
